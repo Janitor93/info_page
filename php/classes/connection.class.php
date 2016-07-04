@@ -8,7 +8,7 @@ class Connection
   public $db;
   private $dbhost = 'localhost';
   private $dbuser = 'root';
-  private $dbpass = 'mars123';
+  private $dbpass = '';
   private $dbname = 'webcom';
 
   public function __construct() {

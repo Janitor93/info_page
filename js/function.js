@@ -41,7 +41,7 @@ $(document).ready(function() {
   var id = 1;
   function generate() {
     $.ajax({
-      url:'php/allreviews.php',
+      url:'php/leafing.php',
       type: 'POST',
       dataType: 'html',
       data: ({id}),

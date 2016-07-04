@@ -39,7 +39,7 @@ class Reviews extends Connection
           if(!in_array($_FILES['image']['type'], $types)) {
             echo "invalid type";
           } else {
-            $dir = $_SERVER['DOCUMENT_ROOT'] . "webcom/avatars/";
+            $dir = $_SERVER['DOCUMENT_ROOT'] . "info_page/avatars/";
             $uploadfile = $dir . basename($_FILES['image']['name']);
             $this->url = "avatars/" . basename($_FILES['image']['name']);
             if(move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile)) {
